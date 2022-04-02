@@ -13,3 +13,10 @@
     color: white;
     z-index: 100;
   }
+
+  @media (max-width: 1000px) {
+    .Header {
+      padding-top: 15px;
+      font-size: 6.4vw;
+    }
+  }

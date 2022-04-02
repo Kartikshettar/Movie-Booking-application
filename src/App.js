@@ -1,12 +1,21 @@
+import { Container } from '@material-ui/core';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-import {header} from "./common/Header/header.js"; // eslint-disable-line no-unused-vars
-
+import Header from  "./common/Header/header"; // eslint-disable-line no-unused-vars
+import SimpleBottomNavigation from "./common/MainNav";
 
 function App() {
   return (
+    <BrowserRouter>
+    <Header></Header>
     <div className="App">
-      <header />
+      <Container>
+
+      </Container>
     </div>
+  
+    <SimpleBottomNavigation></SimpleBottomNavigation>
+    </BrowserRouter>
   );
 };
 
