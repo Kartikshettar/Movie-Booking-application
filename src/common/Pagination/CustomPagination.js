@@ -1,14 +1,6 @@
 //importing required files
 import React from "react";
 import Pagination from "@material-ui/lab/Pagination";
-import { createTheme , ThemeProvider } from "@material-ui/core/styles";
-
-//pagitation div theme
-const darkTheme = createTheme({
-  palette: {
-    type: "dark",
-  },
-});
 
 //navigation till 15 pages as it can have hundreds of pages
 export default function CustomPagination({ setPage, numOfPages = 15 }) {
@@ -28,7 +20,7 @@ export default function CustomPagination({ setPage, numOfPages = 15 }) {
         marginTop: 10,
       }}
     >
-      <ThemeProvider theme={darkTheme}>
+
         <Pagination
           onChange={(e) => handlePageChange(e.target.textContent)}
           count={numOfPages}
@@ -36,7 +28,7 @@ export default function CustomPagination({ setPage, numOfPages = 15 }) {
           hideNextButton
           hidePrevButton
         />
-      </ThemeProvider>
+
     </div>
   );
 }
