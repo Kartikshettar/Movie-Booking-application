@@ -1,12 +1,5 @@
 .trending {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .pageTitle{
-    color: black;
-    font-family:'Times New Roman', Times, serif;
-  }
-  .pageTitle:hover{
-    color: antiquewhite;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

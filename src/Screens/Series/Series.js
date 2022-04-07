@@ -1,23 +1,17 @@
-//importing reqired files
-
-import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Genres from "../../common/Genres/Genres"
-import SingleContent from "../../common/SingleContent/SingleContent";
-import CustomPagination from "../../common/Pagination/CustomPagination";
-import useGenres from "../../hooks/useGenres";
+import Genres from "../../components/Genres/Genres";
+import CustomPagination from "../../components/Pagination/CustomPagination";
+import SingleContent from "../../components/SingleContent/SingleContent";
+import useGenre from "../../hooks/useGenre";
 
-
-
-//intializing geners pages content 
 const Series = () => {
   const [genres, setGenres] = useState([]);
   const [selectedGenres, setSelectedGenres] = useState([]);
   const [page, setPage] = useState(1);
   const [content, setContent] = useState([]);
   const [numOfPages, setNumOfPages] = useState();
-  const genreforURL = useGenres(selectedGenres);
+  const genreforURL = useGenre(selectedGenres);
 
   const fetchSeries = async () => {
     const { data } = await axios.get(
@@ -34,8 +28,6 @@ const Series = () => {
     // eslint-disable-next-line
   }, [genreforURL, page]);
 
-
-  //function display TV series on the application
   return (
     <div>
       <span className="pageTitle">Discover Series</span>
@@ -61,7 +53,6 @@ const Series = () => {
             />
           ))}
       </div>
-      {/* page navigator bar */}
       {numOfPages > 1 && (
         <CustomPagination setPage={setPage} numOfPages={numOfPages} />
       )}
