@@ -1,5 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"); /*Font family for modal*/
 
+
+/* Styling and adjusting the modal*/
 .ContentModal__landscape {
   object-fit: contain;
   border-radius: 10px;

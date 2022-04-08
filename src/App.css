@@ -1,21 +1,26 @@
+/* for smooth scroll */
 * {
   scroll-behavior: smooth;
 }
 
+/* Styles for app body */
 .app {
   min-height: 100vh;
-  background-color: #39445a;
+  /* background-color: #39445a; */
+  background-color: aliceblue;
   color: white;
   padding-top: 130px;
   padding-bottom: 70px;
 }
 
+/* for responsive behaviour */
 @media (max-width: 700px) {
   .app {
     padding-top: 70px;
   }
 }
 
+/* some styles and settings for page title */
 .pageTitle {
   text-transform: uppercase;
   display: flex;
@@ -27,6 +32,7 @@
   color: white;
 }
 
+/* for responsive behaviour */
 @media (max-width: 1000px) {
   .pageTitle {
     font-size: 6.4vw;

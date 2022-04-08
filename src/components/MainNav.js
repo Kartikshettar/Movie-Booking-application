@@ -18,6 +18,7 @@ const useStyles = makeStyles({
   },
 });
 
+/* Footer component which has navigation bar that used to move to Trending , Movies , TV-Series,Search */
 export default function SimpleBottomNavigation() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
@@ -35,6 +36,7 @@ export default function SimpleBottomNavigation() {
     }
   }, [value, history]);
 
+  
   return (
     <BottomNavigation
       value={value}

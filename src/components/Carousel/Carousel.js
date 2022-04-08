@@ -22,6 +22,7 @@ const Gallery = ({ id, media_type }) => {
     </div>
   ));
 
+  /* For responsive behaviour to show the items when the size changes */
   const responsive = {
     0: {
       items: 3,
@@ -33,7 +34,7 @@ const Gallery = ({ id, media_type }) => {
       items: 7,
     },
   };
-
+/* To display Credits */ 
   const fetchCredits = async () => {
     const { data } = await axios.get(
       `https://api.themoviedb.org/3/${media_type}/${id}/credits?api_key=594d4a2e07c4240e4c3b1540eb841369&language=en-US`

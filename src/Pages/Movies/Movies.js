@@ -28,6 +28,7 @@ const Movies = () => {
     // eslint-disable-next-line
   }, [genreforURL, page]);
 
+  /* display the movie modal */ 
   return (
     <div>
       <span className="pageTitle">Discover Movies</span>

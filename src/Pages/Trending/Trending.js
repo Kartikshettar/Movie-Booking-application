@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import SingleContent from "../../components/SingleContent/SingleContent";
 import CustomPagination from "../../components/Pagination/CustomPagination";
 
+
+                /* defining variable to store content fetched using API  */
 const Trending = () => {
   const [page, setPage] = useState(1);
   const [content, setContent] = useState([]);
@@ -22,6 +24,7 @@ const Trending = () => {
     // eslint-disable-next-line
   }, [page]);
 
+  /* for displaying the data  */
   return (
     <div>
       <span className="pageTitle">Trending Today</span>

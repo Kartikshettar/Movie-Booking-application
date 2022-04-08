@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
@@ -14,6 +15,7 @@ import { Button } from "@material-ui/core";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import Carousel from "../Carousel/Carousel";
 
+/* Creating modal */
 const useStyles = makeStyles((theme) => ({
   modal: {
     display: "flex",
@@ -69,6 +71,8 @@ export default function TransitionsModal({ children, media_type, id }) {
     // eslint-disable-next-line
   }, []);
 
+
+  /* Modal as been to contain movie which show the detals of film  */
   return (
     <>
       <div

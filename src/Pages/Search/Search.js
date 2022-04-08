@@ -1,10 +1,9 @@
+/* importing files needed for Search page */
 import {
   Button,
-  createMuiTheme,
   Tab,
   Tabs,
   TextField,
-  ThemeProvider,
 } from "@material-ui/core";
 import "./Search.css";
 import SearchIcon from "@material-ui/icons/Search";
@@ -20,14 +19,14 @@ const Search = () => {
   const [content, setContent] = useState([]);
   const [numOfPages, setNumOfPages] = useState();
 
-  const darkTheme = createMuiTheme({
-    palette: {
-      type: "dark",
-      primary: {
-        main: "#fff",
-      },
-    },
-  });
+  // const darkTheme = createMuiTheme({
+  //   palette: {
+  //     type: "dark",
+  //     primary: {
+  //       main: "#fff",
+  //     },
+  //   },
+  // });
 
   const fetchSearch = async () => {
     try {
@@ -48,9 +47,10 @@ const Search = () => {
     // eslint-disable-next-line
   }, [type, page]);
 
+/*  Displaying the search bar where the string is taken as input and matches with the data and return the results obtained */
   return (
     <div>
-      <ThemeProvider theme={darkTheme}>
+      {/* <ThemeProvider theme={darkTheme}> */}
         <div className="search">
           <TextField
             style={{ flex: 1 }}
@@ -81,7 +81,7 @@ const Search = () => {
           <Tab style={{ width: "50%" }} label="Search Movies" />
           <Tab style={{ width: "50%" }} label="Search TV Series" />
         </Tabs>
-      </ThemeProvider>
+      {/* </ThemeProvider> */}
       <div className="trending">
         {content &&
           content.map((c) => (

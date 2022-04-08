@@ -8,6 +8,7 @@ import Trending from "./Pages/Trending/Trending";
 import Search from "./Pages/Search/Search";
 import { Container } from "@material-ui/core";
 
+//page loads on the web browser 
 function App() {
   return (
     <BrowserRouter>

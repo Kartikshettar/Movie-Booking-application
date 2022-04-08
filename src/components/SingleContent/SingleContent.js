@@ -3,6 +3,8 @@ import { img_300, unavailable } from "../../config/config";
 import "./SingleContent.css";
 import ContentModal from "../ContentModal/ContentModal";
 
+
+//component where the a movie information is displayed as a card
 const SingleContent = ({
   id,
   poster,

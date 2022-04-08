@@ -1,3 +1,4 @@
+/* impoerting reqired files needed */
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Genres from "../../components/Genres/Genres";
@@ -28,6 +29,8 @@ const Series = () => {
     // eslint-disable-next-line
   }, [genreforURL, page]);
 
+
+  /* to show the data fetched  */
   return (
     <div>
       <span className="pageTitle">Discover Series</span>

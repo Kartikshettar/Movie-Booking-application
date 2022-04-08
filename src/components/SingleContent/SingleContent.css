@@ -1,18 +1,22 @@
+/* Styling for the content  */
 .media {
   display: flex;
   flex-direction: column;
   width: 200px;
   padding: 5px;
   margin: 5px 0;
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-color:  rgb(32,32,32);
   border-radius: 10px;
   position: relative;
-  font-family: "Montserrat", sans-serif;
+  /*font-family: "Montserrat", sans-serif;*/
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .media:hover {
-  background-color: white;
-  color: black;
+  /* background-color: white; */
+  background-color:	rgb(128,128,128);
+  
 }
 
 @media (max-width: 550px) {
