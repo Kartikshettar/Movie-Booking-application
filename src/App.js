@@ -1,19 +1,20 @@
+import React from 'react';
+import './App.css';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import "./App.css";
-import Header from "./components/Header/Header";
-import SimpleBottomNavigation from "./components/MainNav";
-import Movies from "./Pages/Movies/Movies";
-import Series from "./Pages/Series/Series";
-import Trending from "./Pages/Trending/Trending";
-import Search from "./Pages/Search/Search";
-import { Container } from "@material-ui/core";
+import { Container } from '@material-ui/core';
+import Header from  "./common/Header/header"; 
+import SimpleBottomNavigation from "./common/MainNav";
+import Movies from "./Screens/Movies/Movies";
+import Series from "./Screens/Series/Series";
+import Trending from "./Screens/Trending/Trending";
+import Search from "./Screens/Search/Search";
 
-//page loads on the web browser 
+//display the components movie page tv series page, trending movie page ,search bar page and also header and footer
 function App() {
   return (
     <BrowserRouter>
       <Header />
-      <div className="app">
+      <div className="App">
         <Container>
           <Switch>
             <Route path="/" component={Trending} exact />
