@@ -1,39 +1,40 @@
-*{
+/* for smooth scroll */
+* {
   scroll-behavior: smooth;
-
 }
-.App {
-    min-height: 100vh;
-    /* background-color: #63676d; */
-    background-color: #BEBEBE;
-    color: white;
-    padding-top: 130px;
-    padding-bottom: 70px;
+
+/* Styles for app body */
+.app {
+  min-height: 100vh;
+  /* background-color: #39445a; */
+  background-color: aliceblue;
+  color: white;
+  padding-top: 130px;
+  padding-bottom: 70px;
+}
+
+/* for responsive behaviour */
+@media (max-width: 700px) {
+  .app {
+    padding-top: 70px;
   }
-  @media (max-width: 700px) {
-    .App {
-      padding-top: 70px;
-    }
-  }
-  @media (max-width: 700px) {
-    .app {
-      padding-top: 70px;
-    }
-  }
-  
+}
+
+/* some styles and settings for page title */
+.pageTitle {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2vw;
+  padding: 4px;
+  border-radius: 50px;
+  color: white;
+}
+
+/* for responsive behaviour */
+@media (max-width: 1000px) {
   .pageTitle {
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    font-family: "Merriweather", sans-serif;
-    font-size: 2vw;
-    padding: 4px;
-    border-radius: 50px;
-    color: white;
+    font-size: 6.4vw;
   }
-  
-  @media (max-width: 1000px) {
-    .pageTitle {
-      font-size: 6.4vw;
-    }
-  }
+}
